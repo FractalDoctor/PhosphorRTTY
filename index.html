@@ -78,30 +78,38 @@
 <div class="border-top">&#9484;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9488;</div>
 
 <h1>&#9651; PHOSPHORRTTY</h1>
-<div class="tagline">Real-Time Radio Teletype Decoder for iPhone.</div>
+<div class="tagline">Real-Time Radio Teletype Decoder for iPhone and iPad.</div>
 
 <div class="content">
 
-<p>PhosphorRTTY decodes RTTY (Radio Teletype) signals in real time using your iPhone's microphone. Hold your phone near a shortwave radio tuned to an RTTY signal and watch the text appear on an authentic phosphor CRT display, character by character.</p>
+<p>PhosphorRTTY decodes RTTY (Radio Teletype) signals in real time using your iPhone or iPad microphone. Hold it near a shortwave radio tuned to an RTTY signal and watch the text appear on an authentic phosphor CRT display, character by character.</p>
 
-<p>No internet connection required. No external hardware. No account. Just your iPhone and a radio.</p>
+<p>No internet connection required. No external hardware. No account. Just your iPhone or iPad and a radio.</p>
 
 <h2>FEATURES</h2>
 <ul>
-    <li>Real-time RTTY decoding via microphone &mdash; ITA2 (Baudot) and ASCII modes</li>
+    <li>Real-time RTTY decoding via microphone &mdash; ITA2 (Baudot) or ASCII</li>
     <li>Automatic frequency control (AFC) acquires and tracks drifting signals</li>
     <li>Auto-baud detection: 45.45, 50, 75, 100 Bd</li>
-    <li>Auto-shift detection: 85, 170, 450, 850 Hz</li>
+    <li>Auto-shift detection: 170, 450, 850 Hz</li>
     <li>Live FFT spectrum display, scrolling waterfall, and paper punch tape visualisation</li>
     <li>Bit period histogram with baud rate markers</li>
-    <li>Session logging with full decoded text, timestamps, and signal parameters</li>
+    <li>Session logging with full decoded text, timestamps, and signal parameters, with export of every session at once</li>
     <li>Amber and green phosphor CRT themes with scanlines, vignette, and glow effects</li>
+    <li>RYRY test sequences shown, dimmed, or hidden</li>
     <li>USB and LSB conventions supported</li>
+    <li>Native on iPad in every orientation, with larger type and the teleprinter, spectrum, waterfall and punch tape across the full width</li>
     <li>No accounts, no tracking, no network access</li>
 </ul>
 
 <h2>DSP ENGINE</h2>
-<p>Per-sample I/Q quadrature demodulation with biquad low-pass filtering, W7AY Automatic Threshold Correction, and a digital phase-locked loop (DPLL) for timing recovery. 512-point FFT for frequency analysis and AFC. All signal processing runs entirely on-device.</p>
+<p>Per-sample I/Q quadrature demodulation with biquad low-pass filtering, asymmetric envelope tracking, direct mark and space magnitude comparison for bit decisions, and a digital phase-locked loop (DPLL) for timing recovery. 512-point FFT for frequency analysis and AFC. All signal processing runs entirely on-device.</p>
+
+<h2>REQUIREMENTS</h2>
+<ul>
+    <li>iPhone or iPad with a microphone</li>
+    <li>iOS or iPadOS 26.2 or later</li>
+</ul>
 
 <h2>DECODER ACCURACY</h2>
 <p>PhosphorRTTY has been tested against real over-the-air HF recordings and synthetic test signals. Detailed test results, methodology, and decoded output samples are available in the <a href="tests.html">decoder test report</a>.</p>
